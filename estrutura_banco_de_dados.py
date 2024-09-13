@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy #cria o banco de dados
 app = Flask(__name__)
 #Criar uma instância de SQL Alchemy
 app.config['SECRET_KEY'] = 'noth$ebastian144'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres.ooarapkgjpggeachcpgv:1Corintio$7@aws-0-us-west-1.pooler.supabase.com:6543/postgres'
 
 db = SQLAlchemy(app)
 db:SQLAlchemy
